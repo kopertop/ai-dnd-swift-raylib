@@ -23,6 +23,10 @@ let package = Package(
                 .product(name: "Raylib", package: "Raylib")
             ],
             path: "Sources/AIDnD"
+        ),
+        .testTarget(
+            name: "AIDnDTests",
+            dependencies: ["AIDnD"]
         )
     ]
 )

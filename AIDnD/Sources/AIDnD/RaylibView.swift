@@ -86,7 +86,6 @@ class RaylibHostView: NSView {
     }
     
     deinit {
-        print("RaylibHostView deinit") // Debug print
         if Raylib.isWindowReady {
             Raylib.closeWindow()
         }

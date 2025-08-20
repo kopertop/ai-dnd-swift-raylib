@@ -2,6 +2,18 @@
 
 This document is my primary guide for developing the native Swift version of the AI D&D project. It is a living document embodying the principle of **Compounding Engineering**. I will update it after every major task to refine my workflows and ensure consistent, high-quality development.
 
+
+# WORKFLOW
+
+Make sure your workflow includes:
+
+1. Research the task to finish
+2. Create the tests, verify they fail
+3. Create the code, iterate until the tests pass
+4. Final code review and cleanup, run all tests, make sure they all pass (including ones unrelated to what we did)
+5. Create a thoughtful but susinct commit message
+6. Log the output of changes you made
+
 ## 1. Project Overview
 
 - **Mission**: Create a high-performance, native D&D game for Apple platforms (macOS & iOS) using Raylib for rendering and a local LLM for the AI Dungeon Master.
@@ -79,3 +91,5 @@ Development will be done within Xcode. Dependencies like `Raylib-Swift` will be 
 
 ---
 *This document was last updated on 2025-08-20. I will update it as I learn.*
+
+
