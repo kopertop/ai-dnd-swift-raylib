@@ -29,3 +29,4 @@ DerivedData/
 # Package.pins
 
 .DS_Store
+.build/
