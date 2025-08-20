@@ -1,0 +1,31 @@
+## Xcode
+#
+# gitignore contributors: remember to keep this file simple and straightforward
+# gitignore contributors: please keep this file in sync with https://github.com/github/gitignore/blob/main/Global/Xcode.gitignore
+
+## User-specific
+
+*.xcuserdatad/
+*.xcworkspace/
+
+## Build generated
+
+build/
+DerivedData/
+
+## Various
+
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# *.build/
+# Package.resolved
+# Package.pins
+
+.DS_Store
