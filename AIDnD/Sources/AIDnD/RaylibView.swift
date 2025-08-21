@@ -71,6 +71,15 @@ class RaylibHostView: NSView {
         if window != nil && !Raylib.isWindowReady {
             Raylib.initWindow(800, 450, "AI D&D")
             Raylib.setTargetFPS(60)
+
+            let currentMonitor = Raylib.getCurrentMonitor()
+            let monitorWidth = Raylib.getMonitorWidth(currentMonitor)
+            let monitorHeight = Raylib.getMonitorHeight(currentMonitor)
+            Raylib.setWindowSize(monitorWidth, monitorHeight)
+            Raylib.toggleFullscreen()
+
+            // Update camera offset after window is set to full screen
+            game.camera.offset = Vector2(x: Float(Raylib.getScreenWidth()) / 2.0, y: Float(Raylib.getScreenHeight()) / 2.0)
         }
     }
     

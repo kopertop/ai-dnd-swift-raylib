@@ -1,4 +1,3 @@
-
 import Raylib
 
 class Game {
@@ -29,11 +28,12 @@ class Game {
 
         // Initialize camera
         self.camera = Camera2D(
-            offset: Vector2(x: 400, y: 225), // Center of the screen
+            offset: Vector2(x: 0, y: 0), // Placeholder, actual offset set in RaylibHostView
             target: player.position,
             rotation: 0.0,
             zoom: 1.0
         )
+        
     }
 
     func update() { // Removed 'mutating' as it's a class now
